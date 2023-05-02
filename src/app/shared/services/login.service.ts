@@ -19,5 +19,7 @@ export class LoginService {
     return this.httpClient.post<Token>(environment.apiUrl + '/login',credenciales);
     
   }
-
+  googleLogin(token: any): Observable<Token>{
+    return this.httpClient.post<Token>(environment.apiUrl + '/login/google', { idToken: token.idToken });
+  }
 }

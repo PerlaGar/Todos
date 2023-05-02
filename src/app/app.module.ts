@@ -20,7 +20,7 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { DetalleProductoComponent } from './pages/productos/detalle-producto/detalle-producto.component';
 import { LoginComponent } from './pages/login/login.component';
 
-import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig, GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
 import {GoogleLoginProvider} from '@abacritt/angularx-social-login';
 
 
@@ -48,7 +48,8 @@ import {GoogleLoginProvider} from '@abacritt/angularx-social-login';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    SocialLoginModule
+    SocialLoginModule,
+    GoogleSigninButtonModule
   ],
   providers: [{
     provide: 'SocialAuthServiceConfig',

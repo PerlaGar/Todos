@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'galeria', component: GaleriaComponent},
   {path: 'tareas', component: TareasComponent, canActivate: [AuthGuard]/*, data:{['admi', 'manager']}*/}, //puede haber mas de un guardia como para comprobar el rol del usuario
   {path: 'registro', component: RegistroComponent, canActivate:[NoauthGuard]},
-  {path: 'login', component: LoginComponent, canActivate:[NoauthGuard]},
+  {path: 'login', component: LoginComponent},
   {path: 'productos', component:ProductosComponent, children:[
     {path: '', component: ListarProductoComponent},
     {path: 'crear', component: CrearProductosComponent},
