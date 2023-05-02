@@ -1,0 +1,19 @@
+<!--<h2> Mi aplicación </h2>
+
+<a routerLink="">Inicio</a>
+<a routerLink="tareas">Tareas</a>
+<a routerLink="galeria">Galeria</a>-->
+<mat-toolbar color="primary">
+    <mat-icon>home</mat-icon>
+    <span>My app</span>
+    <br>
+    <div>
+        Producto selecionado:
+    </div>
+    <div class="derecha">
+        <button *ngIf="loginStatus" (click)="logout()">Cerrar sesión</button>
+        <a href="/login" *ngIf="!loginStatus" class="bton">Ininciar sesion</a>
+    </div>
+    <!--<button *ngIf="loginStatus" (click)="logout()">Login</button>-->
+
+</mat-toolbar>

@@ -1,0 +1,25 @@
+<p *ngIf="cargando">Cargando...</p> <!--* es si se va a usar-->
+
+<form (submit)="newTarea()">
+<input type="text" name="titulo" [(ngModel)]="tarea.titulo">
+<textarea name="descripcion"></textarea>
+<button>Crear</button>
+</form>
+
+<div *ngIf="!cargando">
+    <h2>Lista de tareas</h2>
+
+    <div *ngFor="let item of tareas">
+        {{item.titulo}}
+    </div>
+</div>
+
+
+<!--
+    tareas.foreach(item =>{
+        console.log(item.titulo)
+    })
+    <button *ngIf="cargando" (click)="getTareas()"> Click me!</button>
+
+    <input type="text" name="titulo" (keyup)="setTitulo($event)">
+-->

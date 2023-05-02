@@ -1,0 +1,13 @@
+
+<form (submit)="inciarsesion()">
+    <div>
+        <input type="email" name="email" [(ngModel)]="credenciales.email">
+    </div>
+    <div>
+        <input type="password" name="password" [(ngModel)]="credenciales.password">
+    </div>
+    <div>
+        <button (click)="inciarsesion()"> Iniciar sesión</button>
+        <!--<asl-google-signin-button type='icon' size='medium'></asl-google-signin-button>-->
+    </div>
+</form>

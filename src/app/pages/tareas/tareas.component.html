@@ -1,0 +1,17 @@
+<h2>Lista de tareas</h2>
+    <!--<form (submit)="filtrar()">
+
+    <mat-form-field> 
+        <mat-label>Buscar</mat-label>
+        <input matInput name="buscar" type="text" placeholder="Buscar..." [(ngModel)]="buscar">
+        <mat-error>Este campo es requerido</mat-error>
+    </mat-form-field>
+    <button mat-flat-button color="primary">
+        <mat-icon>search</mat-icon>
+    </button>
+</form>-->
+
+<div *ngFor="let tarea of tareas">
+    {{tarea.titulo}}
+    {{tarea.title}}
+</div>

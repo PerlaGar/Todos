@@ -1,0 +1,8 @@
+    
+<ul>
+    <li *ngFor="let item of items">
+        <a (click)="selectItem(item)" [routerLink]="item.id">
+            {{item.nombre}}
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,22 @@
+<form [formGroup]="form" (submit)="crearUsuario()">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" formControlName="nombre">
+    </div>
+    <div>
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" formControlName="email">
+    </div>
+    <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" formControlName="password">
+    </div>
+    <div>
+        <label for="terminos">Acepto los terminos y condiciones</label>
+        <input type="checkbox" name="terminos" formControlName="terminos">
+    </div>
+    <div>
+        <button>Crear usuario</button>
+    </div>
+</form>
+-{{form.valid}}-

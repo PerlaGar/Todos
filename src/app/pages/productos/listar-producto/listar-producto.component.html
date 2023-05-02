@@ -1,0 +1,10 @@
+<h2>Listado de productos</h2>
+
+Producto seleccionado: {{producto.nombre || 'ninguno'}}
+<!--es el que se selecciono dede el hijo--->
+
+<app-lista [items]="productos" (seleccion)="mostrarItem($event)"></app-lista>
+<!--aqui el padre le esta pasando pero el hijo tiene cerrado la puerta
+solo abrir le para este -->
+
+<!--<button (click)="funcion($event)">click me</button>-->
